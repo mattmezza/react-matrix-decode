@@ -1,8 +1,10 @@
+var path = require('path')
+
 module.exports = {
-  entry: './index.js',
+  entry: path.join(__dirname, 'index.js'),
   output: {
     filename: 'matrix-decode.js',
-    path: './dist'
+    path: path.join(__dirname, 'dist')
   },
   module: {
     loaders: [
@@ -12,5 +14,10 @@ module.exports = {
         loaders: ['react-hot-loader', 'babel-loader']
       }
     ]
+  },
+  devServer: {
+    contentBase: './test',
+    compress: true,
+    port: 9000
   }
 }
