@@ -1,7 +1,7 @@
 Matrix Decode
 =======
 
-`npm install react-matrix-reload --save`
+`npm install react-matrix-decoder --save`
 
 ```javascript
 import React from 'react'
